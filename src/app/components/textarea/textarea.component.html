@@ -1,0 +1,16 @@
+<div class="container" [ngClass]="{'container-padding': padding}">
+  <div class="title">{{ title }}</div>
+  <div class="text-container">
+    <textarea
+      [ngClass]="{'textarea-error': errors}"
+      [value]="value"
+      [disabled]="disabled"
+      [placeholder]="placeholder"
+      [attr.maxlength]="maxLength"
+      [attr.rows]="rows"
+      (input)="onChange($event.target.value)"
+      (blur)="onTouched()"
+    ></textarea>
+  </div>
+</div>
+

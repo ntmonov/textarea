@@ -1,0 +1,27 @@
+.container-padding {
+  padding: 16px;
+}
+
+.title {
+  padding-bottom: 16px;
+}
+
+.container {
+  width: 100%;
+
+  textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  textarea.textarea-error {
+    border-color: red;
+  }
+
+  textarea:focus {
+    outline: none !important;
+  }
+}
