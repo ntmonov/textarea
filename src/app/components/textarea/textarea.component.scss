@@ -4,6 +4,11 @@
 
 .title {
   padding-bottom: 16px;
+  color: var(--textarea-title-color, #090E15);
+  font-family: var(--textarea-title-font-family, "Helvetica Neue LT W1G");
+  font-size: var(--textarea-title-font-size, 22px);
+  letter-spacing: var(--textarea-title-letter-spacing, 0.4px);
+  line-height: var(--textarea-title-line-height, 24px);
 }
 
 .container {
@@ -15,13 +20,27 @@
     border: 1px solid #D8D8D8;
     border-radius: 8px;
     padding: 16px;
+
+    color: var(--textarea-text-color, rgba(9,14,21,0.9));
+    font-family: var(--textarea-text-font-family, "Helvetica Neue LT W1G");
+    font-size: var(--textarea-text-font-size, 17px);
+    letter-spacing: var(--textarea-text-letter-spacing, 0.23px);
+    line-height: var(--textarea-text-line-height, 20px);
   }
 
   textarea.textarea-error {
-    border-color: red;
+    border-color: var(--textarea-error-color, red);
   }
 
   textarea:focus {
     outline: none !important;
+  }
+
+  textarea::placeholder {
+    color: var(--textarea-placeholder-color, #D8D8D8);
+    font-family: var(--textarea-placeholder-font-family, "Helvetica Neue LT W1G");
+    font-size: var(--textarea-placeholder-font-size, 17px);
+    letter-spacing: var(--textarea-placeholder-letter-spacing, 0.23px);
+    line-height: var(--textarea-placeholder-line-height, 20px);
   }
 }
